@@ -1,0 +1,3 @@
+[submodule "jupyter-ai-quantagent"]
+	path = jupyter-ai-quantagent
+	url = https://github.com/srdas/jupyter-ai-quantagent

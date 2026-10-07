@@ -1,0 +1,10 @@
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+
+# Jupyter / local scratch
+.ipynb_checkpoints/
+*.chat
+.claude/
+demo.ipynb
+make_gravitational_waves_nb.py

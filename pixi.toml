@@ -1,0 +1,56 @@
+[workspace]
+authors = ["David L. Qiu <david@qiu.dev>"]
+channels = ["conda-forge"]
+name = "jai-demo"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+lab = "jupyter lab"
+
+[dependencies]
+python = "*"
+pip = "*"
+jupyter-ai = "*"
+jupyterlab = "*"
+matplotlib = "*"
+gwpy = "*"
+# jupyter-ai-quantagent dependencies (from conda-forge)
+jupyter-ai-persona-manager = ">=0.0.1"
+jupyterlab-chat = ">=0.19.0"
+litellm = ">=1.50.0"
+quantlib-python = ">=1.35"
+pyportfolioopt = ">=1.5.0"
+nbformat = ">=5.9.0"
+pandas = ">=2.0.0"
+numpy = ">=1.24.0"
+yfinance = ">=0.2.0"
+# jupyter-ai-jupyternaut dependencies available on conda-forge
+# (jupyter-ai-litellm and langchain-mcp-adapters are too old on conda-forge, so they come from PyPI)
+deepmerge = ">=2.0,<3"
+httpcore2 = "*"
+httpx2 = "*"
+jsonpatch = "*"
+langchain = ">=1.0.0"
+langchain-core = "*"
+langchain-litellm = ">=0.7.0"
+langchain-protocol = "*"
+langgraph = "*"
+langgraph-checkpoint = ">=2.1.0"
+langgraph-prebuilt = "*"
+langgraph-sdk = "*"
+langsmith = "*"
+orjson = "*"
+ormsgpack = "*"
+requests-toolbelt = "*"
+truststore = "*"
+uuid-utils = "*"
+python-xxhash = "*"
+zstandard = "*"
+# build backend for the editable install
+hatchling = ">=1.5.0"
+ipywidgets = ">=8.1.9,<9"
+
+[pypi-dependencies]
+jupyter_ai_quantagent = { path = "./jupyter-ai-quantagent", editable = true }
+jupyter-ai-jupyternaut = ">=0.1.0, <0.2"
