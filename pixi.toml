@@ -48,6 +48,7 @@ uuid-utils = "*"
 python-xxhash = "*"
 zstandard = "*"
 ipywidgets = ">=8.1.9,<9"
+scikit-learn = ">=1.9.1,<2"
 
 [pypi-dependencies]
 jupyter-ai-jupyternaut = ">=0.1.0, <0.2"
