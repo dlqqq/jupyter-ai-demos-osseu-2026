@@ -8,3 +8,9 @@
 .claude/
 demo.ipynb
 make_gravitational_waves_nb.py
+
+# Ignore secrets in '.env'
+.env
+
+# Demo 2 source (not yet public)
+jupyter-ai-quantagent/

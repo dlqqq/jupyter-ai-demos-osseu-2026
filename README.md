@@ -7,13 +7,13 @@ Demos of [Jupyter AI](https://github.com/jupyterlab/jupyter-ai) and AI agents dr
 Requires [pixi](https://pixi.sh).
 
 ```bash
-git clone --recurse-submodules https://github.com/dlqqq/jupyter-ai-demos-osseu-2026
+git clone https://github.com/dlqqq/jupyter-ai-demos-osseu-2026
 cd jupyter-ai-demos-osseu-2026
 pixi install
 pixi run lab
 ```
 
-`pixi run lab` starts JupyterLab with Jupyter AI. Dependencies come from conda-forge wherever possible; [`jupyter-ai-quantagent`](https://github.com/srdas/jupyter-ai-quantagent) is a git submodule installed in editable mode.
+`pixi run lab` starts JupyterLab with Jupyter AI. Dependencies come from conda-forge wherever possible.
 
 ## Connect Claude Code / Codex to JupyterLab
 
@@ -43,7 +43,7 @@ Data is stored in [`data/`](data/), so the notebook runs offline. The last secti
 
 ## Demo 2: Quantitative finance via Jupyter AI
 
-[QuantAgent](https://github.com/srdas/jupyter-ai-quantagent) is a Jupyter AI persona for quantitative finance, built on [QuantLib](https://www.quantlib.org/) and [PyPortfolioOpt](https://pyportfolioopt.readthedocs.io/). Open a chat in JupyterLab, mention `@QuantAgent`, and describe a task in plain English, e.g. `/quantlib-run` to price an option or `/pyportpf-run` to optimize a portfolio. See its [README](jupyter-ai-quantagent/README.md) for examples.
+We also showed a Jupyter AI persona for quantitative finance, which prices securities and optimizes portfolios from plain-English requests in the chat. Its source code is still in development and isn't available yet.
 
 ## Credits
 
